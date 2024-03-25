@@ -122,7 +122,7 @@ export default function Products() {
         >
           <a
             href="#"
-            className="bg-red-300  flex justify-center items-center   rounded p-3  text-slate-900 transition-colors max-md:mt-[-50px] "
+            className="  flex justify-center items-center   rounded p-3  text-slate-900 transition-colors max-md:mt-[-50px] "
           >
             <div className="w-8/12 text-center flex justify-center items-center py-3  self-center bg-slate-800  gap-3 rounded-lg shadow-md shadow-slate-600 text-lg font-medium text-white transition-all ease-linear duration-150 hover:bg-slate-700">
               <button
