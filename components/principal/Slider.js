@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import React, { Component } from "react";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -6,9 +8,39 @@ import gafas from "../../public/gafas.jpg";
 import lentesSol from "../../public/lentesSol.jpg";
 import slider2 from "../../public/slider2.jpg";
 
+import Glide from "@glidejs/glide";
+
 const Slider = () => {
   return (
     <>
+      {/*    <!-- Indicators --> */}
+      <div
+        className="absolute bottom-0 flex items-center justify-center w-full gap-2"
+        data-glide-el="controls[nav]"
+      >
+        <button
+          className="p-4 group"
+          data-glide-dir="=0"
+          aria-label="goto slide 1"
+        >
+          <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+        </button>
+        <button
+          className="p-4 group"
+          data-glide-dir="=1"
+          aria-label="goto slide 2"
+        >
+          <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+        </button>
+        <button
+          className="p-4 group"
+          data-glide-dir="=2"
+          aria-label="goto slide 3"
+        >
+          <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+        </button>
+      </div>
+
       <Carousel>
         <div className="w-full h-[85vh]  bg-yellow-400 flex items-center max-md:h-[80vh]">
           <div className="w-[100%] h-auto  max-lg:h-full">

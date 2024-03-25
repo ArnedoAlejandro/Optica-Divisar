@@ -6,7 +6,9 @@ import { useGlobal } from "../../context/globalContext";
 // import less from "../../../public/less.png";
 
 const AcordeonCategorias = () => {
-  const { itemCategoria, handleTogleActive } = useGlobal();
+  const { itemCategoria, handleTogleActive, handleTogleActiveCategoria } =
+    useGlobal();
+  const categori = "categoria";
 
   const categoria = [
     { id: 1, categori: "Armazones" },
@@ -25,7 +27,7 @@ const AcordeonCategorias = () => {
         <div className="ml-5 w-44  py-1 text-xl duration-700  cursor-pointer  transition-all ease-linear  max-lg:border-1  ">
           <div
             className=" border-b-2 border-slate-400 flex justify-between items-center p-2 gap-3 text-slate-700 transition-all ease-linear duration-300 hover:border-yellow-500 hover:text-yellow-500"
-            onClick={handleTogleActive}
+            onClick={() => handleTogleActive(categori)}
           >
             <p className="text-start w-full text-xl ">Categorias</p>
           </div>
