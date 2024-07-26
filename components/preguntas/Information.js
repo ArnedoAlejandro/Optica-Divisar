@@ -1,6 +1,6 @@
-import Whatsap from "../Whatsap";
+import Whatsap from "../componentes reusables/Whatsap";
 import AcordeonBuy from "./AcordeonBuy";
-import Instagram from "../Instagram";
+import Instagram from "../componentes reusables/Instagram";
 import Testimonials from "./Testimonials";
 
 const Information = () => {

@@ -107,6 +107,9 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+.imagenGradient{
+  mask-image: linear-gradient(black 80% , transparent);
+}
 
 @media (max-width: 768px) {
   .carousel {

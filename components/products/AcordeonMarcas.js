@@ -1,26 +1,23 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
-// import less from "../public/less.png";
 
 const AcordeonMarcas = () => {
   const { item, handleTogleActive, handleTogleActiveMarcas } = useGlobal();
   const marca = "marca";
 
   const marcas = [
-    { id: 1, marca: "Armazones" },
-    { id: 2, marca: "Lentes de Sol" },
-    { id: 3, marca: "Clip On" },
-    { id: 4, marca: "Contacto" },
-    { id: 5, marca: "Contacto" },
-    { id: 6, marca: "Contacto" },
-    { id: 7, marca: "Contacto" },
-    { id: 8, marca: "Contacto" },
-    { id: 9, marca: "Contacto" },
-    { id: 10, marca: "Contacto" },
-    { id: 11, marca: "Contacto" },
-    { id: 12, marca: "Contacto" },
+    { id: 1, marca: "Elizabeth Arden" },
+    { id: 2, marca: "Valeria Mazza" },
+    { id: 3, marca: "Las Oreiro" },
+    { id: 4, marca: "Paula Cahen´anvers" },
+    { id: 5, marca: "Reef" },
+    { id: 6, marca: "Philippe Rosset" },
+    { id: 7, marca: "Rusty" },
+    { id: 8, marca: "Ay Not Dead" },
+    { id: 9, marca: "Vulk" },
+    { id: 10, marca: "Wrangler" },
+    { id: 11, marca: "Wanama" },
+    { id: 12, marca: "Mormaii" },
   ];
 
   return (

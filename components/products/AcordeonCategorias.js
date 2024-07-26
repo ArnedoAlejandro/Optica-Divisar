@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
 
 // import less from "../../../public/less.png";

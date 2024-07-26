@@ -1,5 +1,5 @@
 import Image from "next/image";
-import what from "../public/what.png";
+import what from "../../public/what.png";
 import Link from "next/link";
 
 const Whatsap = () => {

@@ -1,10 +1,8 @@
 "use client";
-
 import Link from "next/link";
-
 import Image from "next/image";
-import newLogo from "../public/newLogo.png";
-import { useGlobal } from "../context/globalContext";
+import newLogo from "../../public/newLogo.png";
+import { useGlobal } from "../../context/globalContext";
 
 const Layout = () => {
   const { handleHead, isToggleOpen, setIsToggleOpen } = useGlobal();

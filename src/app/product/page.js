@@ -1,17 +1,17 @@
-import React from "react";
-
+"use client";
 import Footer from "../../../components/Footer";
-
-import Layout from "../../../components/Layout";
-import Products from "../../../components/products/Products";
+import Layout from "../../../components/Layout/Layout";
+import SideProducts from "../../../components/products/SideProducts";
 import ProductosNew from "../../../components/products/ProductosNew";
+import { useGlobal } from "../../../context/globalContext";
 
 const Modelo = () => {
+  const { modalOpen } = useGlobal();
   return (
     <>
       <Layout />
-      <Products />
-      <ProductosNew />
+      {/* TODO: REalizar la verificacion si el modal se muestra que no se muestre el sideProductos */}
+      {!modalOpen && <SideProducts />} <ProductosNew />
       <Footer />
     </>
   );

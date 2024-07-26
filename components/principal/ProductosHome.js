@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import armazonesNew from "../../public/armazonesNew.png";
-
 import armazonesAmarillo from "../../public/armazones.png";
 import lenteContacto from "../../public/lenteContacto.jpg";
 import sol from "../../public/sol.png";
