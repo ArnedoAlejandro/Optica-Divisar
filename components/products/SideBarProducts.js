@@ -5,7 +5,7 @@ import AcordeonMarcas from "./AcordeonMarcas";
 // import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
 
-export default function SideProducts() {
+export default function SideBarProducts() {
   const { isSideNavOpen, changeButonSideBar, isToggleOpen, modalOpen } =
     useGlobal();
 

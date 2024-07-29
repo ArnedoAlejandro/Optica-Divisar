@@ -1,7 +1,7 @@
 "use client";
 import Footer from "../../../components/Footer";
 import Layout from "../../../components/Layout/Layout";
-import SideProducts from "../../../components/products/SideProducts";
+import SideBarProducts from "../../../components/products/SideBarProducts";
 import ProductosNew from "../../../components/products/ProductosNew";
 import { useGlobal } from "../../../context/globalContext";
 
@@ -11,7 +11,7 @@ const Modelo = () => {
     <>
       <Layout />
       {/* TODO: REalizar la verificacion si el modal se muestra que no se muestre el sideProductos */}
-      {!modalOpen && <SideProducts />} <ProductosNew />
+      {!modalOpen && <SideBarProducts />} <ProductosNew />
       <Footer />
     </>
   );

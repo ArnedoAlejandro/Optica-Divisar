@@ -26,7 +26,7 @@ const ProductosHome = () => {
               <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={sol}
-                  className="p-2 w-full h-full  rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
+                  className=" p-2  w-full h-full  rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -40,10 +40,10 @@ const ProductosHome = () => {
               <div className=" w-full   text-3xl rounded-t-lg h-auto text-center justify-start">
                 <h3 className="">Armazones</h3>
               </div>
-              <div className="w-full h-[321px] overflow-hidden ">
+              <div className=" w-full h-[321px] overflow-hidden ">
                 <Image
                   src={armazonesNew}
-                  className="p-2 w-full rounded-xl h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
+                  className="imagenGradient p-2 w-full rounded-xl h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -60,7 +60,7 @@ const ProductosHome = () => {
               <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={clipon}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
+                  className="imagenGradient p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -77,7 +77,7 @@ const ProductosHome = () => {
               <div className="w-full h-[321px] overflow-hidden hover:shadow-lg bg-cover">
                 <Image
                   src={lenteContacto}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -94,7 +94,7 @@ const ProductosHome = () => {
               <div className="   w-full h-[321px] overflow-hidden hover:shadow-lg">
                 <Image
                   src={consultas}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -111,7 +111,7 @@ const ProductosHome = () => {
               <div className="   w-full h-[321px] overflow-hidden hover:shadow-lg">
                 <Image
                   src={armazonesAmarillo}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>

@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 const SliderModal = ({ productsImg }) => {
+  console.log(productsImg);
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
@@ -33,7 +34,7 @@ const SliderModal = ({ productsImg }) => {
             src={image.src}
             width={image.width || 614} // Ajustar con un valor por defecto
             height={image.height || 406} // Ajustar con un valor por defecto
-            alt={`Imagen ${index}`}
+            alt={"Imgen producto"}
             className="w-full h-auto max-md:h-full"
           />
         </div>
