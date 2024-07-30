@@ -2,7 +2,7 @@
 import { useGlobal } from "../../context/globalContext";
 import Image from "next/image";
 import SliderModal from "./SliderModal";
-import carrito from "../../public/carrito.gif";
+import carritoCompra from "../../public/carritoCompra.png";
 import { useEffect, useState } from "react";
 import ModifiedSpiner from "../spiner/ModifiedSpiner";
 
@@ -55,14 +55,17 @@ const ModalProduct = ({ product }) => {
         <ModifiedSpiner />
       ) : (
         <>
-          <div className="bg-white mt-10 flex justify-center w-8/12 h-auto rounded-lg p-1 max-md:flex-col max-lg:w-9/12 max-lg:justify-end max-lg:mt-24 max-md:w-9/12  max-md:mr-[14%]">
+          <div className="bg-white mt-10 flex justify-center w-8/12 h-auto rounded-lg p-1 max-md:flex-col max-lg:items-center max-lg:w-9/12 max-lg:justify-end max-lg:mt-24 max-md:w-9/12 ">
             <div className="h-full w-1/2  flex justify-center items-center max-lg:w-full">
               <SliderModal productsImg={productsImg} />
             </div>
 
-            <div className="w-1/2 pb-5 h-100vh flex flex-col  justify-between max-lg:w-full   ">
-              {/* <div className=" w-full flex justify-end  z-20 max-lg:w-0">
-                <button onClick={handleCloseModal}>
+            <div className="w-1/2  pb-5 h-100vh flex flex-col   justify-between max-lg:w-full   ">
+              <div className=" w-full flex justify-end  z-20 max-lg:w-0 max-lg:invisible max-lg:h-0 ">
+                <button
+                  className="max-md:h-0 max-md:invisible"
+                  onClick={handleCloseModal}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -78,9 +81,9 @@ const ModalProduct = ({ product }) => {
                     />
                   </svg>
                 </button>
-              </div> */}
+              </div>
 
-              <div className="w-full  flex flex-col gap-auto px-5">
+              <div className="mt-[-25px] w-full   flex flex-col gap-auto px-5 max-lg:mt-3 max-md:p-2 ">
                 <p className=" text-2xl font-semibold text-slate-600">
                   {product.marca}
                 </p>
@@ -93,7 +96,7 @@ const ModalProduct = ({ product }) => {
                 </p>
               </div>
 
-              <div className="px-5 flex justify-between items-center gap-2 max-md:flex-col ">
+              <div className="px-5 flex justify-between items-center gap-2 max-md:flex-col  max-md:p-2 ">
                 <div className="flex flex-col  max-md:w-full max-md:flex-row max-md:items-center max-md:justify-between  ">
                   <p className="text-xl text-start text-slate-500 max-lg:text-lg">
                     Cantidad
@@ -153,12 +156,23 @@ const ModalProduct = ({ product }) => {
                   </p>
                 </div>
               </div>
-              <div className="px-5 max-lg:mt-4   ">
-                <button className="w-auto py-2 px-3 bg-black flex justify-between  items-center gap-2 rounded-md transform duration-500 shadow-md shadow-black/30 hover:bg-black/70 hover:shadow-none">
-                  <p className="text-yellow-400 font-semibold text-lg">
-                    Comprar{" "}
+              <div className="px-5 max-lg:mt-4 flex justify-between gap-2   max-md:p-2">
+                <button className="w-auto py-2 px-3 bg-yellow-300 flex justify-between items-center gap-2 rounded-md transform duration-500 shadow-sm shadow-black/30 hover:bg-yellow-500 hover:shadow-none max-md:w-1/2">
+                  <p className=" font-semibold text-lg max-md:font-normal max-md:text-center max-md:flex-grow text-slate-900">
+                    Comprar
+                  </p>
+                  <Image
+                    src={carritoCompra}
+                    alt="carrito"
+                    width={25}
+                    height={25}
+                    className="max-md:hidden md:block"
+                  />
+                </button>
+                <button className="w-0 invisible max-lg:w-1/2 max-lg:visible py-2 bg-slate-100  px-3  flex justify-center  items-center gap-2 rounded-md transform duration-500 shadow-sm shadow-black/30 hover:bg-black/70 hover:shadow-none ">
+                  <p className=" font-semibold text-lg max-md:font-normal max-md:text-center max-md:flex-grow text-slate-900">
+                    Cerrar
                   </p>{" "}
-                  <Image src={carrito} alt="carrito" width={30} height={30} />
                 </button>
               </div>
             </div>

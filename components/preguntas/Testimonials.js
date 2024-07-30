@@ -41,7 +41,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className=" mt-20 pb-20 w-10/12 m-auto grid grid-cols-3 gap-6 max-md:mt-10 max-lg:grid-cols-2 max-lg:w-11/12 max-md:grid-cols-1">
+    <div className=" mt-10 pb-20 w-10/12 m-auto grid grid-cols-3 gap-6 max-md:mt-10 max-lg:grid-cols-2 max-lg:w-11/12 max-md:grid-cols-1">
       {testimonial.map((testimonio) => (
         <div className="overflow-hidden bg-white rounded-lg shadow-lg shadow-slate-400 text-slate-500 ">
           <div className="relative p-6 max-md:p-3">

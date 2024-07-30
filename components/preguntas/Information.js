@@ -263,7 +263,7 @@ const Information = () => {
         {/* ------------------------------------------------------------- TESTIMONIALES ------------------------------------------------------- */}
         <h2
           data-aos="fade-right"
-          className="titulos mt-28 text-xl p-3  text-center   font-semi-bold "
+          className="titulos mt-20 text-xl p-3  text-center   font-semi-bold "
         >
           Testimoniales de nuestros clientes
         </h2>

@@ -111,7 +111,7 @@ background-size: cover;
   mask-image: linear-gradient(black 80% , transparent);
 }
 /* .imagenGradientRadial{
-  mask-image: radial-gradient(black 40% , transparent);
+  mask-image: radial-gradient(black 30% , rgba(31, 204, 97, 0.5) 80%);
 } */
 
 @media (max-width: 768px) {
