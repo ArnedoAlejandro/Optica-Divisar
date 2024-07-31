@@ -29,24 +29,9 @@ const GlobalProvider = ({ children }) => {
   const [item, setItem] = useState(false);
   const [itemCategoria, setItemCategoria] = useState(false);
 
-  const handleTogleActiveMarcas = () => {
+  const handleTogleActive = () => {
     setItem(!item);
-    // setItemCategoria(item !== itemCategoria ? !itemCategoria : itemCategoria);
-  };
-  const handleTogleActiveCategoria = () => {
-    setItemCategoria(!itemCategoria);
-    // setItemCategoria(item !== itemCategoria ? !itemCategoria : itemCategoria);
-  };
-
-  const handleTogleActive = (param) => {
-    if (param === "marca") {
-      setItem(!item);
-      setItemCategoria(false);
-    }
-    if (param === "categoria") {
-      setItemCategoria(!itemCategoria);
-      setItem(false);
-    }
+    setItemCategoria(item !== itemCategoria ? !itemCategoria : itemCategoria);
   };
 
   const changeButonSideBar = () => {
@@ -164,7 +149,6 @@ const GlobalProvider = ({ children }) => {
       value={{
         isToggleOpen,
         handleHead,
-        setIsToggleOpen,
         isToggleSideBar,
         handleSide,
         setToggleSideBar,
@@ -180,14 +164,9 @@ const GlobalProvider = ({ children }) => {
         changeButonSideBar,
         isSideNavOpen,
 
-        // handleTogleActive,
+        handleTogleActive,
         item,
         itemCategoria,
-
-        //
-        handleTogleActive,
-        handleTogleActiveCategoria,
-        handleTogleActiveMarcas,
       }}
     >
       {children}

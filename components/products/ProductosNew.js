@@ -1,8 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
+
 import Solution from "../Solution";
 import Image from "next/image";
+
 import "./../Sidebar.css";
+import AcordeonCategorias from "./AcordeonCategorias";
+import AcordeonMarcas from "./AcordeonMarcas";
 import Whatsap from "../Whatsap";
 import ModalProduct from "./ModalProduct";
 import { useGlobal } from "../../context/globalContext";
@@ -61,7 +65,9 @@ function ProductosNew() {
       </section>
       {/* Vista instagram */}
       <Instagram />
-      <Whatsap />
+      <div className=" ">
+        <Whatsap />
+      </div>
     </>
   );
 }

@@ -108,13 +108,6 @@ background-size: cover;
 }
 
 
-@media (max-width: 768px) {
-  .carousel {
-    overflow-x: auto; /* o overflow-x: scroll; */
-  }
-
-  /* Estilos adicionales para los elementos internos del carrusel si es necesario */
-}
 
 @media (max-width: 780px) {
   .titulos{

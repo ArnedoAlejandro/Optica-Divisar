@@ -6,12 +6,11 @@ import AcordeonMarcas from "./AcordeonMarcas";
 import { useGlobal } from "../../context/globalContext";
 
 export default function Products() {
-  const { isSideNavOpen, changeButonSideBar, isToggleOpen, modalOpen } =
-    useGlobal();
+  const { isSideNavOpen, changeButonSideBar, isToggleOpen } = useGlobal();
 
   return (
     <>
-      {!isToggleOpen && !modalOpen ? (
+      {!isToggleOpen ? (
         <button
           title="Side navigation"
           type="button"
@@ -88,48 +87,14 @@ export default function Products() {
           aria-label="side navigation"
           className="flex-1 divide-y divide-slate-100 overflow-auto 300"
         >
-          <div className="h-screen flex flex-col  content-between">
-            <div
-              className={
-                isSideNavOpen
-                  ? ""
-                  : "hidden border-t pb-10  border-slate-200   transition-colors"
-              }
-            >
-              <div className="w-full flex justify-end px-4 items-center  ">
-                <button
-                  title="Side navigation"
-                  type="button"
-                  aria-haspopup="menu"
-                  aria-label="Side navigation"
-                  aria-expanded={isSideNavOpen ? " true" : "false"}
-                  aria-controls="nav-menu-3"
-                  onClick={changeButonSideBar}
-                  className="mt-3 w-12 h-12  text-center flex justify-center items-center   self-center bg-slate-700  rounded-full shadow-md shadow-slate-600 text-lg font-medium text-white transition-all ease-linear duration-150 hover:bg-slate-700"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-12 h-12"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <ul className="flex flex-1 flex-col gap-1 ">
+          <div>
+            <ul className="flex flex-1 flex-col gap-1 py-3">
               <li className="px-3 ">
                 <a
                   href="#"
                   className="flex items-center gap-3 rounded p-1 text-slate-700 transition-colors  hover:text-yellow-500  aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                 >
+                  <div className="flex items-center self-center "></div>
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     <AcordeonMarcas />
                   </div>
@@ -140,6 +105,7 @@ export default function Products() {
                   href="#"
                   className="flex items-center gap-3 rounded p-1 text-slate-700 transition-colors hover:text-yellow-500  aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                 >
+                  <div className="flex items-center self-center "></div>
                   <div className=" flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     <AcordeonCategorias />
                   </div>
@@ -148,6 +114,48 @@ export default function Products() {
             </ul>
           </div>
         </nav>
+
+        <footer
+          className={
+            isSideNavOpen ? "" : "hidden  h-52 border-t  border-slate-200 "
+          }
+        >
+          <a
+            href="#"
+            className="  flex justify-center items-center   rounded p-3  text-slate-900 transition-colors max-md:mt-[-50px] "
+          >
+            <div className="w-8/12 text-center flex justify-center items-center py-3  self-center bg-slate-800  gap-3 rounded-lg shadow-md shadow-slate-600 text-lg font-medium text-white transition-all ease-linear duration-150 hover:bg-slate-700">
+              <button
+                title="Side navigation"
+                type="button"
+                className=""
+                aria-haspopup="menu"
+                aria-label="Side navigation"
+                aria-expanded={isSideNavOpen ? " true" : "false"}
+                aria-controls="nav-menu-3"
+                onClick={changeButonSideBar}
+              >
+                <p className=" flex gap-3 items-center">
+                  Cerrar
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                    />
+                  </svg>
+                </p>
+              </button>
+            </div>
+          </a>
+        </footer>
       </aside>
     </>
   );

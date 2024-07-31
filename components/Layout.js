@@ -7,7 +7,7 @@ import newLogo from "../public/newLogo.png";
 import { useGlobal } from "../context/globalContext";
 
 const Layout = () => {
-  const { handleHead, isToggleOpen, setIsToggleOpen } = useGlobal();
+  const { handleHead, isToggleOpen } = useGlobal();
 
   return (
     <>
@@ -76,11 +76,7 @@ const Layout = () => {
                   : "invisible opacity-0"
               }`}
             >
-              <li
-                onClick={() => setIsToggleOpen(false)}
-                role="none"
-                className="flex  items-stretch "
-              >
+              <li role="none" className="flex  items-stretch ">
                 <Link
                   role="menuitem"
                   aria-haspopup="false"
@@ -91,13 +87,8 @@ const Layout = () => {
                   <span>Inicio</span>
                 </Link>
               </li>
-              <li
-                onClick={() => setIsToggleOpen(false)}
-                role="none"
-                className="flex items-stretch "
-              >
+              <li role="none" className="flex items-stretch ">
                 <Link
-                  onClick={() => setIsToggleOpen(false)}
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
@@ -108,11 +99,7 @@ const Layout = () => {
                   <span>Productos</span>
                 </Link>
               </li>
-              <li
-                onClick={() => setIsToggleOpen(false)}
-                role="none"
-                className="flex items-stretch"
-              >
+              <li role="none" className="flex items-stretch">
                 <Link
                   role="menuitem"
                   aria-haspopup="false"
@@ -123,13 +110,8 @@ const Layout = () => {
                   <span>Contacto</span>
                 </Link>
               </li>
-              <li
-                onClick={() => setIsToggleOpen(false)}
-                role="none"
-                className="flex items-stretch"
-              >
+              <li role="none" className="flex items-stretch">
                 <Link
-                  onClick={() => setIsToggleOpen(false)}
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
@@ -139,11 +121,7 @@ const Layout = () => {
                   <span>Como comprar</span>
                 </Link>
               </li>
-              <li
-                onClick={() => setIsToggleOpen(false)}
-                role="none"
-                className="flex items-stretch"
-              >
+              <li role="none" className="flex items-stretch">
                 <Link
                   role="menuitem"
                   aria-haspopup="false"
