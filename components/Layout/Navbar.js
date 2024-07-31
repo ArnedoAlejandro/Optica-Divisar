@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
 import newLogo from "../../public/newLogo.png";
-import carritoCompra from "../../public/carritoCompra.png";
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
