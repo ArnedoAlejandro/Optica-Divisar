@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../components/Layout/Layout";
+import Layout from "../../../components/Layout/Navbar1";
 import Solution from "../../../components/Solution";
 import Information from "../../../components/preguntas/Information";
 import Footer from "../../../components/Footer";

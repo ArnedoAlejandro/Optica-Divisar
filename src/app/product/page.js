@@ -1,6 +1,6 @@
 "use client";
 import Footer from "../../../components/Footer";
-import Layout from "../../../components/Layout/Layout";
+import Layout from "../../../components/Layout/Navbar1";
 import SideBarProducts from "../../../components/products/SideBarProducts";
 import ProductosNew from "../../../components/products/ProductosNew";
 import { useGlobal } from "../../../context/globalContext";
