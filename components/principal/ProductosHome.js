@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import armazonesNew from "../../public/armazonesNew.png";
-
 import armazonesAmarillo from "../../public/armazones.png";
 import lenteContacto from "../../public/lenteContacto.jpg";
 import sol from "../../public/sol.png";
@@ -20,14 +19,14 @@ const ProductosHome = () => {
           className="  w-8/12 mt-14 m-auto  grid grid-cols-3  place-items-stretch  gap-11 max-lg:grid-cols-2 max-md:w-10/12 max-sm:grid-cols-1 "
         >
           <Link href="">
-            <div className="flex-col bg-white justify-center text-black/80   w-full h-[385px] rounded-lg shadow-md shadow-black/60 text-yellow/70 font-bold items-center ease-in duration-500  ">
+            <div className="flex-col bg-white justify-center text-black/80   w-full h-[385px] rounded-lg shadow-md   shadow-slate-400 text-yellow/70 font-bold items-center ease-in duration-500  ">
               <div className=" w-full   text-3xl  rounded-t-lg h-auto text-center justify-start">
                 <h3 className="max-md:text-2xl">Lentes de sol</h3>
               </div>
               <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={sol}
-                  className="p-2 w-full h-full  rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -41,10 +40,10 @@ const ProductosHome = () => {
               <div className=" w-full   text-3xl rounded-t-lg h-auto text-center justify-start">
                 <h3 className="">Armazones</h3>
               </div>
-              <div className="w-full h-[321px] overflow-hidden ">
+              <div className=" w-full h-[321px] overflow-hidden ">
                 <Image
                   src={armazonesNew}
-                  className="p-2 w-full rounded-xl h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -61,7 +60,7 @@ const ProductosHome = () => {
               <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={clipon}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105 hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -75,10 +74,10 @@ const ProductosHome = () => {
               <div className=" w-full   text-3xl   rounded-t-lg h-auto text-center justify-start">
                 <h3 className="">Lentes de contacto</h3>
               </div>
-              <div className="w-full h-[321px] overflow-hidden hover:shadow-lg bg-cover">
+              <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={lenteContacto}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -92,10 +91,10 @@ const ProductosHome = () => {
               <div className=" w-full  text-3xl   rounded-t-lg h-auto text-center justify-start">
                 <h3 className="">Consultas</h3>
               </div>
-              <div className="   w-full h-[321px] overflow-hidden hover:shadow-lg">
+              <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={consultas}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>
@@ -109,10 +108,10 @@ const ProductosHome = () => {
               <div className=" w-full   text-3xl   rounded-t-lg h-auto text-center justify-start">
                 <h3 className="">Presupuestos</h3>
               </div>
-              <div className="   w-full h-[321px] overflow-hidden hover:shadow-lg">
+              <div className="w-full h-[321px] overflow-hidden ">
                 <Image
                   src={armazonesAmarillo}
-                  className="p-2 w-full h-full rounded-xl transition-transform ease-linear transform duration-300 hover:scale-105    hover:grayscale"
+                  className="imagenGradient  w-full h-full  transition-transform ease-linear transform duration-300 hover:scale-105   hover:grayscale"
                   alt="Imagen del sol"
                 />
               </div>

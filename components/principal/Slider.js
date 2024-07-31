@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
+=======
+"use client";
+>>>>>>> version-1.4
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -9,6 +13,11 @@ import slider2 from "../../public/slider2.jpg";
 const Slider = () => {
   return (
     <>
+<<<<<<< HEAD
+=======
+      {/*    <!-- Indicators --> */}
+
+>>>>>>> version-1.4
       <Carousel>
         <div className="w-full h-[85vh]  bg-yellow-400 flex items-center max-md:h-[80vh]">
           <div className="w-[100%] h-auto  max-lg:h-full">

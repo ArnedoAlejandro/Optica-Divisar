@@ -1,6 +1,6 @@
 import React from "react";
-import Instagram from "../Instagram";
-import Whatsap from "../Whatsap";
+import Instagram from "../componentes reusables/Instagram";
+import Whatsap from "../componentes reusables/Whatsap";
 
 const Policy = () => {
   return (

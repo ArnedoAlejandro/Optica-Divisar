@@ -1,4 +1,4 @@
-.nav-menu {
+/* .nav-menu {
   margin-top: 82px;
   width: 20%;
   height: auto;
@@ -8,9 +8,7 @@
   top: 0;
   transition: 850ms;
   overflow: auto;
-  /* scrollbar-width: none;
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  */
+
 }
 
 .nav-menu::-webkit-scrollbar {
@@ -51,4 +49,4 @@
     padding-right: 2rem;
   }
   
-}
+} */

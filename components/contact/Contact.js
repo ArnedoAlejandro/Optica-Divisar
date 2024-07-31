@@ -1,18 +1,15 @@
 "use client";
 import { useEffect } from "react";
 import Solution from "../Solution";
-
 import Location from "./Location";
-
 import logoDivisar from "../../public/logoDivisar.png";
 import fondoForm from "../../public/fondoForm.jpeg";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import React, { useRef } from "react";
-import Whatsap from "../Whatsap";
-import Instagram from "../Instagram";
+import Whatsap from "../componentes reusables/Whatsap";
+import Instagram from "../componentes reusables/Instagram";
 
 const Contact = () => {
   const form = useRef();

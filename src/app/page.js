@@ -1,12 +1,14 @@
 "use client";
 import Content from "../../components/principal/Content";
 import Footer from "../../components/Footer";
-import Layout from "../../components/Layout";
+import Navbar from "../../components/Layout/Navbar";
+// import Layout2 from "../../components/Layout/Navbar";
 
 export default function Home() {
   return (
     <>
-      <Layout />
+      <Navbar />
+      {/* <Layout2 /> */}
       <Content />
       <Footer />
     </>

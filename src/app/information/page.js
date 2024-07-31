@@ -1,15 +1,14 @@
 import React from "react";
-import Layout from "../../../components/Layout";
 import Solution from "../../../components/Solution";
-
 import Footer from "../../../components/Footer";
 import Policy from "../../../components/information/Policy";
+import Navbar from "../../../components/Layout/Navbar";
 
 const Informacion = () => {
   return (
     <>
       <div>
-        <Layout />
+        <Navbar />
         <Solution />
         <Policy />
         <Footer />

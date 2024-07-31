@@ -1,10 +1,9 @@
 "use client";
 import Solution from "../Solution";
-
-import Whatsap from "../Whatsap";
+import Whatsap from "../componentes reusables/Whatsap";
 import Slider from "./Slider";
 import "aos/dist/aos.css";
-import Instagram from "../Instagram";
+import Instagram from "../componentes reusables/Instagram";
 import Marcas from "./Marcas";
 import Reparacion from "./Reparacion";
 import Abaout from "./Abaout";
