@@ -24,15 +24,15 @@ export default function Navbar() {
               className=" flex  items-center gap-2 whitespace-nowrap py-5 text-xl focus:outline-none lg:flex-1"
               href="/"
             >
-              <div className=" h-auto  max-lg:h-16 flex text-3xl text-slate-500 font-semibold gap-3 items-center">
+              <div className=" h-auto  max-lg:h-16 flex flex-col items-center text-3xl text-slate-500 font-semibold ">
                 <Image
                   src={newLogo}
                   width={0}
                   height={0}
                   alt="logo"
-                  className="w-16 h-auto"
+                  className="w-16 h-auto m-auto"
                 />
-                <p className="w-auto  max-md:hidden max-md:w-0">
+                <p className="w-auto  text-lg max-md:hidden max-md:w-0 max-md:h-0">
                   Optica Divisar
                 </p>
               </div>
@@ -162,7 +162,7 @@ export default function Navbar() {
             <div className="ml-auto flex items-center gap-5 justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 max-lg:gap-3 max-lg:flex-row-reverse">
               {/* Generar condicional si el usuario esta dentro de su secion que se muestre el carro */}
               {/* Generar dinamicamente el numero que tiene en el carro de compras si tiene que se muestr si no no */}
-              <a
+              {/* <a
                 href="#"
                 className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-lg text-yellow-500"
               >
@@ -188,7 +188,7 @@ export default function Navbar() {
                 <span className="absolute -right-1.5 -top-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-green-500 px-1.5 text-sm text-white">
                   1<span className="sr-only"> new emails </span>
                 </span>
-              </a>
+              </a> */}
               <button className="w-auto h-10 px-5 text-lg bg-yellow-300 font-semibold text-slate-700  rounded-full shadow-sm shadow-black/20 transition duration-700 ease-out hover:bg-yellow-400 max-lg:px-3 max-lg:shadow-sm max-lg:shadow-black/30 max-lg:bg-yellow-400 hover:text-slate-500  hover:shadow-none max-lg:invisible">
                 Iniciar sesión
               </button>
