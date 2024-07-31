@@ -5,15 +5,10 @@ import Image from "next/image";
 import "./../Sidebar.css";
 import AcordeonCategorias from "./AcordeonCategorias";
 import AcordeonMarcas from "./AcordeonMarcas";
-import Whatsap from "../Whatsap";
-import ModalProduct from "./ModalProduct";
-import { useState } from "react";
-import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
 import "./../Sidebar.css";
 import "aos/dist/aos.css";
 import Whatsap from "../componentes reusables/Whatsap";
-import Solution from "../Solution";
 import ModalProduct from "./ModalProduct";
 import Instagram from "../componentes reusables/Instagram";
 

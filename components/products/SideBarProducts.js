@@ -5,14 +5,9 @@ import AcordeonMarcas from "./AcordeonMarcas";
 // import Image from "next/image";
 import { useGlobal } from "../../context/globalContext";
 
-<<<<<<< HEAD:components/products/Products.js
-export default function Products() {
-  const { isSideNavOpen, changeButonSideBar, isToggleOpen } = useGlobal();
-=======
 export default function SideBarProducts() {
   const { isSideNavOpen, changeButonSideBar, isToggleOpen, modalOpen } =
     useGlobal();
->>>>>>> version-1.4:components/products/SideBarProducts.js
 
   return (
     <>
