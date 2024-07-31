@@ -51,17 +51,6 @@ const ModalProduct = ({ product }) => {
           : "opacity-70 pointer-events-none"
       } transition-opacity duration-300`}
     >
-<<<<<<< HEAD
-      <div className="mt-10 grid place-items-center w-4/12 h-auto bg-white rounded-lg p-1 max-md:w-9/12  max-md:mt-3 max-md:mr-[14%]">
-        <div className="w-full  ">
-          <SliderModal />
-        </div>
-        <div className="w-full py-3 ">
-          <div className="mt-[-30px] text-center ">
-            <p className="text-2xl text-black/80 ">
-              {selectProduct.marca} & {selectProduct.modelo}
-            </p>
-=======
       {isLoading ? (
         <ModifiedSpiner />
       ) : (
@@ -70,7 +59,6 @@ const ModalProduct = ({ product }) => {
             <div className="h-full w-1/2  flex justify-center items-center max-lg:w-full">
               <SliderModal productsImg={productsImg} />
             </div>
->>>>>>> version-1.4
 
             <div className="w-1/2  pb-5 h-100vh flex flex-col   justify-between max-lg:w-full   ">
               <div className=" w-full flex justify-end  z-20 max-lg:w-0 max-lg:invisible max-lg:h-0 ">
@@ -95,22 +83,6 @@ const ModalProduct = ({ product }) => {
                 </button>
               </div>
 
-<<<<<<< HEAD
-          <div className="m-auto w-full flex  text-lg justify-evenly gap-5 mt-5 max-md:text-md max-md:p-4">
-            <a
-              href=""
-              className="h-auto w-1/3 bg-yellow-400 shadow-lg text-slate-600  shadow-black/60 text-center py-2 rounded-lg  font-semibold transition-colors ease-linear duration-200 hover:bg-yellow-300 max-md:w-10/12"
-              onClick={handleCloseModal}
-            >
-              Consultar
-            </a>
-            <button
-              className="h-auto w-1/3 bg-yellow-200 shadow-lg text-slate-600 shadow-black/60 text-center py-2 rounded-lg font-semibold transition-colors ease-linear duration-200 hover:bg-yellow-300 max-md:w-10/12"
-              onClick={handleCloseModal}
-            >
-              Cerrar
-            </button>
-=======
               <div className="mt-[-25px] w-full   flex flex-col gap-auto px-5 max-lg:mt-3 max-md:p-2 ">
                 <p className=" text-2xl font-semibold text-slate-600">
                   {product.marca}
@@ -204,7 +176,6 @@ const ModalProduct = ({ product }) => {
                 </button>
               </div>
             </div>
->>>>>>> version-1.4
           </div>
         </>
       )}

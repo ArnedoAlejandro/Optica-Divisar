@@ -1,19 +1,14 @@
 "use client";
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
-
 import Solution from "../Solution";
 import Image from "next/image";
-
 import "./../Sidebar.css";
 import AcordeonCategorias from "./AcordeonCategorias";
 import AcordeonMarcas from "./AcordeonMarcas";
 import Whatsap from "../Whatsap";
 import ModalProduct from "./ModalProduct";
-=======
 import { useState } from "react";
 import Image from "next/image";
->>>>>>> version-1.4
 import { useGlobal } from "../../context/globalContext";
 import "./../Sidebar.css";
 import "aos/dist/aos.css";
