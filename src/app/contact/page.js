@@ -1,12 +1,12 @@
 "use client";
 import Contact from "../../../components/contact/Contact";
 import Footer from "../../../components/Footer";
-import Layout from "../../../components/Layout/Navbar1";
+import Navbar from "../../../components/Layout/Navbar";
 
 const Contacto = () => {
   return (
     <>
-      <Layout />
+      <Navbar />
       <Contact />
       <Footer />
     </>

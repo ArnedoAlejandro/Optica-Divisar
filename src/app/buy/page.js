@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../components/Layout/Navbar1";
+import Navbar from "../../../components/Layout/Navbar";
 import Solution from "../../../components/Solution";
 import Information from "../../../components/preguntas/Information";
 import Footer from "../../../components/Footer";
@@ -8,7 +8,7 @@ const Comprar = () => {
   return (
     <>
       <div className="m-auto w-full h-full">
-        <Layout />
+        <Navbar />
         <Solution />
         <Information />
         <Footer />
